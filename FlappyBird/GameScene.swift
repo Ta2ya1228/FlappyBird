@@ -433,7 +433,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         ScoreItemLabel.position = CGPoint(x:self.bird.position.x ,y:self.bird.position.y )
         ScoreItemLabel.zPosition = 100 // 一番手前に表示する
         ScoreItemLabel.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.center
-        ScoreItemLabel.text = "+1"
+        ScoreItemLabel.text = "\(self.score)"
         
         //アクション１
         let waitAnimation = SKAction.wait(forDuration: 1.5)
